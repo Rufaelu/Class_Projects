@@ -23,7 +23,8 @@ public class Circle implements TwoDimentionalShapes {
 			return perimeter;
 		}
 		public void display(){
-			
+			System.out.println("The Area of a circle with the Radius of "+ getRad()+ " is: "+ getArea());
+			System.out.println("The Perimeter of a circle with the Radius of "+ getRad()+ " is: "+ getPerimeter());
 		}
 }
 
@@ -49,7 +50,8 @@ class Square implements TwoDimentionalShapes{
 			return perimeter;
 		}
 		public void display(){
-			
+			System.out.println("The Area of a Square with the Size Length of "+ getLength()+ "cm is: "+ getArea()+"cm");
+			System.out.println("The Perimeter of a Square with the Size Length of "+ getLength()+ "cm is: "+ getPerimeter());
 		}
 }
 
@@ -127,18 +129,18 @@ class Rectangle implements TwoDimentionalShapes{
 	
 }
 abstract class Polygon implements TwoDimentionalShapes{
-	protected double area,perimeter, sides[],side;
+	protected double area,perimeter,side;
 	public abstract void display();
 	public abstract void area() ;
-	public abstract void perimeter() ;
+	public abstract void perimeter();
+	public abstract void setSide(double x);
+	//public abstract void setSide();
 }
 
 class Hexagon extends Polygon{
-	public void setSides(double[] x) {
-		sides=new double[6];
-		for(int i=0;i<6;i++) {
-			sides[i]=x[i];
-		}
+
+	public void setSide(double side) {
+		this.side=side;
 	}
 	public void area() {
 		area=(3*Math.sqrt(3)/2)*(side*side);
@@ -146,9 +148,7 @@ class Hexagon extends Polygon{
 	public void perimeter() {
 		perimeter=6*side;
 	}
-	public double[] getSides() {
-		return sides;
-	}
+	
 	public double getArea() {
 		return area;
 	}
@@ -160,11 +160,9 @@ class Hexagon extends Polygon{
 	}
 }
 class Heptagon extends Polygon{
-	public void setSides(double[] x) {
-		sides=new double[7];
-		for(int i=0;i<7;i++) {
-			sides[i]=x[i];
-		}
+	
+	public void setSide(double side) {
+		this.side=side;
 	}
 	public void area() {
 		area=cotpi*(side*side)*(7/4);
@@ -173,9 +171,7 @@ class Heptagon extends Polygon{
 	public void perimeter() {
 		perimeter=7*side;
 	}
-	public double[] getSides() {
-		return sides;
-	}
+	
 	public double getArea() {
 		return area;
 	}
@@ -187,11 +183,9 @@ class Heptagon extends Polygon{
 	}
 }
 class Octagon extends Polygon{
-	public void setSides(double[] x) {
-		sides=new double[8];
-		for(int i=0;i<7;i++) {
-			sides[i]=x[i];
-		}
+	
+	public void setSide(double side) {
+		this.side=side;
 	}
 	
 	public void area() {

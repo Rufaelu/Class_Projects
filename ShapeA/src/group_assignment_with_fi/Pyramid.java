@@ -5,6 +5,11 @@ public abstract class Pyramid implements ThreeDimentionalShape{
 	public abstract void surfaceArea();
 	public abstract void volume();
 	public abstract void display();
+	public abstract void setTribase(double tribase); 
+	public abstract void setTriheight(double triheight);
+	public abstract void setPyramheight(double pyramheight);
+		
+	
 }
 
 class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{

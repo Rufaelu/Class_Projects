@@ -26,6 +26,19 @@ public class Sphere implements ThreeDimentionalShape {
 	public double getVol() {
 		return vol;
 	}
+	public void display() {	
+		System.out.println("The Radius of the Sphere is: "
+				+ getRad());
+		System.out.println("The volume of of the Sphere is: "
+				+ getVol());
+		System.out.println("The Surface Area of the Sphere is: "
+				+ getSurf());
+		System.out.println("The Radius of the Sphere is: "
+				+ getRad());
+		
+		
+		
+	}
 }
 
 class Cylinder implements ThreeDimentionalShape {
@@ -54,9 +67,29 @@ class Cylinder implements ThreeDimentionalShape {
 	public double getVol() {
 		return vol;
 	}
+	
+	public void display() {	
+		System.out.println("The Radius of the Sphere is: "
+				+ getRad());
+		System.out.println("The volume of of the Sphere is: "
+				+ getVol());
+		System.out.println("The Surface Area of the Sphere is: "
+				+ getSurf());
+	
+		
+		
+	}
 }
 class Cone implements ThreeDimentionalShape {
 	private double rad, height, surf, vol;
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
 
 	public void surfaceArea() {
 		surf =  PI * rad * (rad + Math.sqrt((rad*rad)+(height*height)));
@@ -81,6 +114,19 @@ class Cone implements ThreeDimentionalShape {
 	public double getVol() {
 		return vol;
 	}
+	public void display() {
+		System.out.println("The Radius of the Cone is: "
+			+ getRad());
+		System.out.println("The Height of the Cone is: "
+		+ getHeight());
+		System.out.println("The volume of of the Cone is: "
+				+ getVol());
+		System.out.println("The Surface Area of the Cone is: "
+				+ getSurf());
+
+		
+		
+	}
 }
 class Cube implements ThreeDimentionalShape {
 	private double sideLength,surf,vol;
@@ -91,7 +137,7 @@ class Cube implements ThreeDimentionalShape {
 	sideLength=s;
 	
 	}	
-	public double setSide() {
+	public double getSide() {
 		return sideLength;
 		
 		}	
@@ -106,5 +152,19 @@ class Cube implements ThreeDimentionalShape {
 	public double getVol() {
 		return vol;
 	}
+	public void display() {
+		System.out.println("The Side of the Cube is: "
+				+ getSide());
+		System.out.println("The volume of of the Cube is: "
+				+ getVol());
+		System.out.println("The Surface Area of the Cube is: "
+				+ getSurf());
+	
+		
+		
+		
+	}
+	
+	
 }
 

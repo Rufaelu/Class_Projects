@@ -4,10 +4,10 @@ public abstract class Pyramid implements ThreeDimentionalShape{
 	protected double surf,vol,baseArea,sq_side,pyramheight, lateral_area;
 	public abstract void surfaceArea();
 	public abstract void volume();
-	//public abstract void perimeter();
+	public abstract void display();
 }
 
-class TriangularPyramid extends Pyramid implements Shapes{
+class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 	private double tribase, triheight;
 	public void surfaceArea() {
 		area();
@@ -58,9 +58,21 @@ class TriangularPyramid extends Pyramid implements Shapes{
 	public double getVol() {
 		return vol;
 	}
+	public void display() {
+		System.out.println("The volume of The Triangular Pyramid is: "
+				+ getVol());
+		System.out.println("The Surface Area of The Triangular Pyramid is: "
+				+ getSurf());
+		System.out.println("The Base Area of The Triangular Pyramid is: "
+				+ getBaseArea());
+		System.out.println("The Lateral Area of The Triangular Pyramid is: "
+				+ getLateral_area());
+		
+		
+	}
 }
 
-class SquarePyramid extends Pyramid implements Shapes{
+class SquarePyramid extends Pyramid implements TwoDimentionalShapes{
 
 	public void surfaceArea() {
 		area();
@@ -80,5 +92,29 @@ class SquarePyramid extends Pyramid implements Shapes{
 	}
 	public void perimeter() {
 		lateral_area*=4;
+	}
+	public double getBaseArea() {
+		return baseArea;
+	}
+	public double getLateral_area() {
+		return lateral_area;
+	}
+	public double getSurf() {
+		return surf;
+	}
+	public double getVol() {
+		return vol;
+	}
+	public void display() {
+		System.out.println("The volume of The Square Pyramid is: "
+				+ getVol());
+		System.out.println("The Surface Area of The Square Pyramid is: "
+				+ getSurf());
+		System.out.println("The Base Area of The Square Pyramid is: "
+				+ getBaseArea());
+		System.out.println("The Lateral Area of The Square Pyramid is: "
+				+ getLateral_area());
+		
+		
 	}
 }

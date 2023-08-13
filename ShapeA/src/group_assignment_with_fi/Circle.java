@@ -1,6 +1,6 @@
 package group_assignment_with_fi;
 //import java.lang.*;
-public class Circle implements Shapes {
+public class Circle implements TwoDimentionalShapes {
 	   private double rad;
 	    private double area;
 	    private double perimeter;
@@ -25,7 +25,7 @@ public class Circle implements Shapes {
 	
 }
 
-class Square implements Shapes{
+class Square implements TwoDimentionalShapes{
 	 private double length;
 	 private double area, perimeter;
 	 public void area(){
@@ -48,7 +48,7 @@ class Square implements Shapes{
 		}
 }
 
-class Triangle implements Shapes{
+class Triangle implements TwoDimentionalShapes{
 	private double base,side1, side2,height, area, perimeter;
 	public void area(){
         area=0.5*base*height;
@@ -87,7 +87,7 @@ class Triangle implements Shapes{
 		return perimeter;
 	}	
 }
-class Rectangle implements Shapes{
+class Rectangle implements TwoDimentionalShapes{
 	private double length,width, area, perimeter;
 	public void area(){
         area=length+width;
@@ -115,7 +115,7 @@ class Rectangle implements Shapes{
 	}
     
 }
-abstract class Polygon implements Shapes{
+abstract class Polygon implements TwoDimentionalShapes{
 	protected double area,perimeter, sides[],side;
 	
 	public abstract void area() ;

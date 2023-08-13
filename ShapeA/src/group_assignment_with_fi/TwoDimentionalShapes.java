@@ -5,6 +5,7 @@ public interface TwoDimentionalShapes {
 	double cotpi=(1/Math.tan(PI/7));
 	void area();
 	void perimeter();
+	void display();
 	
 
 }

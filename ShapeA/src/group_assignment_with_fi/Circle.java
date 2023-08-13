@@ -22,7 +22,9 @@ public class Circle implements TwoDimentionalShapes {
 		public double getPerimeter() {
 			return perimeter;
 		}
-	
+		public void display(){
+			
+		}
 }
 
 class Square implements TwoDimentionalShapes{
@@ -45,6 +47,9 @@ class Square implements TwoDimentionalShapes{
 		}
 		public double getPerimeter() {
 			return perimeter;
+		}
+		public void display(){
+			
 		}
 }
 
@@ -86,6 +91,9 @@ class Triangle implements TwoDimentionalShapes{
 	public double getPerimeter() {
 		return perimeter;
 	}	
+	public void display(){
+		
+	}
 }
 class Rectangle implements TwoDimentionalShapes{
 	private double length,width, area, perimeter;
@@ -113,11 +121,14 @@ class Rectangle implements TwoDimentionalShapes{
 	public double getPerimeter() {
 		return perimeter;
 	}
-    
+	public void display(){
+		
+	}
+	
 }
 abstract class Polygon implements TwoDimentionalShapes{
 	protected double area,perimeter, sides[],side;
-	
+	public abstract void display();
 	public abstract void area() ;
 	public abstract void perimeter() ;
 }
@@ -144,6 +155,9 @@ class Hexagon extends Polygon{
 	public double getPerimeter() {
 		return perimeter;
 	}
+	public void display(){
+		
+	}
 }
 class Heptagon extends Polygon{
 	public void setSides(double[] x) {
@@ -167,6 +181,9 @@ class Heptagon extends Polygon{
 	}
 	public double getPerimeter() {
 		return perimeter;
+	}
+	public void display(){
+		
 	}
 }
 class Octagon extends Polygon{
@@ -192,5 +209,8 @@ class Octagon extends Polygon{
 	}
 	public double getPerimeter() {
 		return perimeter;
+	}
+	public void display(){
+		
 	}
 }

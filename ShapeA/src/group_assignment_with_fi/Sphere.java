@@ -7,6 +7,7 @@ public class Sphere implements ThreeDimentionalShape {
 		surf = 4 * PI * (rad * rad);
 	}
 
+	
 	public void volume() {
 		vol = (4 / 3) * PI * (rad * rad * rad);
 	}

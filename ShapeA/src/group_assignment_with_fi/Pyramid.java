@@ -68,7 +68,7 @@ class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 		System.out.println("The Lateral Area of The Triangular Pyramid is: "
 				+ getLateral_area());
 		
-		
+
 	}
 }
 

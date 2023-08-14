@@ -29,7 +29,7 @@ public class Main {
 
 
 			for (int i = 0; i < count + 1; i++) {
-				
+				type=4;
 				while (type != 0 && type != 1 && type != 2){
 					
 				System.out.println(" What type of Shape do you want to calculate?");

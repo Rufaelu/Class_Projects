@@ -124,17 +124,10 @@ class Cone implements ThreeDimentionalShape {
 		return vol;
 	}
 	public void display() {
-		System.out.println("The Radius of the Cone is: "
-			+ getRad());
-		System.out.println("The Height of the Cone is: "
-		+ getHeight());
-		System.out.println("The volume of of the Cone is: "
-				+ getVol());
-		System.out.println("The Surface Area of the Cone is: "
-				+ getSurf());
+		
+		System.out.println("The Surface Area of the Cone with the Radius of "+ getRad()+" cm and the Height of "+ getHeight()+"cm is: "+getSurf());
+		System.out.println("The Volume of the Cone with the Radius of "+ getRad()+" cm and the Height of "+ getHeight()+"cm is: "+getSurf());
 
-		
-		
 	}
 }
 class Cube implements ThreeDimentionalShape {

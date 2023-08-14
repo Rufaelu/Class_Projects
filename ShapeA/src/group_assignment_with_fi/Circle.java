@@ -163,7 +163,7 @@ class Hexagon extends Polygon{
 	}
 	public void display(){
 		System.out.println("The Area of the Hexagon with the Side of "+ getSide()+ "cm is: "+ getArea()+"cm");
-		System.out.println("The Perimeter of a Rectangle with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
+		System.out.println("The Perimeter of a Hexagon with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
 	}
 }
 class Heptagon extends Polygon{

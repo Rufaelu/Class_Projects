@@ -234,36 +234,49 @@ public class Main {
 			}
 		}
 		for (int i = 0; i < count; i++) {
-			if (sqcount >= i) {
+		//	if (sqcount >= i) {
 				if(sq[i]!=null)
 				sq[i].display();
 
-			}
-			if (circount >= i) {
+		//	}
+		//	if (circount >= i) {
 				if(c[i]!=null)
 				c[i].display();
-			}
-			if (tricount >= i) {
+		//	}
+		//	if (tricount >= i) {
 				if(tr[i]!=null)
 				tr[i].display();
-			}
-			if (reccount >= i) {
+		//	}
+		///	if (reccount >= i) {
 				if(rec[i]!=null)
 				rec[i].display();
-			}
-			if (hexcount >= i) {
+			//}
+			//if (hexcount >= i) {
 
 				if(hex[i]!=null)
 				hex[i].display();
-			}
-			if (heptcount >= i) {
+			//}
+			//if (heptcount >= i) {
 				if(hept[i]!=null)
 				hept[i].display();
-			}
-			if (octcount >= i) {
+		//	}
+		//	if (octcount >= i) {
 				if(oct[i]!=null)
 				oct[i].display();
-			}
+		//	}
+		if(sp[i]!=null)
+				sp[i].display();
+				if(cy[i]!=null)
+				cy[i].display();
+				if(con[i]!=null)
+				con[i].display();
+				if(cub[i]!=null)
+				cub[i].display();
+				if(tripy[i]!=null)
+				tripy[i].display();
+				if(sqrpy[i]!=null)
+				sqrpy[i].display();
+
 		}
 	}
 }

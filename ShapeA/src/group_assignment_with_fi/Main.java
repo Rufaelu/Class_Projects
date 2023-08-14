@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int type = 0, choice = 0, n = 100, count = 0;
+		int type = 9, choice = 0, n = 100, count = 0;
 		boolean Exit = false;
 
 		Circle c[] = new Circle[n];
@@ -27,10 +27,19 @@ public class Main {
 		Pyramid[] sqrpy = new SquarePyramid[n];
 		while (Exit == false) {
 
+
 			for (int i = 0; i < count + 1; i++) {
+				
+				while (type != 0 && type != 1 && type != 2){
+					
 				System.out.println(" What type of Shape do you want to calculate?");
 				System.out.println("1. 2D shapes\n" + "2. 3D shapes\n" + "0. exit");
 				type = scan.nextInt();
+				if (type != 0 && type != 1 && type != 2){
+				System.out.println("Invalid input");}
+				else 
+				break;
+					}
 				if (type == 1) {
 
 					System.out.println("1. Circle\n" + "2. Square\n" + "3. Triangle\n" + "4. Rectangle\n"
@@ -46,8 +55,7 @@ public class Main {
 
 				if (type == 0) {
 					Exit = true;
-				} else if (type != 0 && type != 1 && type != 2)
-					System.out.println("Invalid input");
+				}
 
 				switch (choice) {
 					case 1:
@@ -216,7 +224,7 @@ public class Main {
 		}
 		for (int i = 0; i < count; i++) {
 
-			if (sq[i] != null) {
+			if (sq[i] != null) {//Checks if it is a null or not and then Displays
 				sq[i].display();
 
 			}

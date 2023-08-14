@@ -25,6 +25,8 @@ public class Circle implements TwoDimentionalShapes {
 		public void display(){
 			System.out.println("The Area of a circle with the Radius of "+ getRad()+ " is: "+ getArea());
 			System.out.println("The Perimeter of a circle with the Radius of "+ getRad()+ " is: "+ getPerimeter());
+			System.out.println("_____________________________________________________________________________________________________________________________");
+
 		}
 }
 
@@ -52,6 +54,8 @@ class Square implements TwoDimentionalShapes{
 		public void display(){
 			System.out.println("The Area of a Square with the Size Length of "+ getLength()+ "cm is: "+ getArea()+"cm");
 			System.out.println("The Perimeter of a Square with the Size Length of "+ getLength()+ "cm is: "+ getPerimeter());
+			System.out.println("_____________________________________________________________________________________________________________________________");
+
 		}
 }
 
@@ -97,7 +101,9 @@ class Triangle implements TwoDimentionalShapes{
 		
 			System.out.println("The Area of a Triangle with the Sides of "+ getSide1()+" and "+getSide2()+ "cm and with the Base of "+getBase()+"cm is: "+ getArea()+"cm");
 			System.out.println("The Perimeter of a Triangle with the Sides of "+ getSide1()+" and "+getSide2()+ "cm and with the Base of "+getBase()+"cm is: "+ getPerimeter());
-	}
+			System.out.println("_____________________________________________________________________________________________________________________________");
+
+		}
 }
 class Rectangle implements TwoDimentionalShapes{
 	private double length,width, area, perimeter;
@@ -128,6 +134,7 @@ class Rectangle implements TwoDimentionalShapes{
 	public void display(){
 					System.out.println("The Area of a Rectangle with the Side Length of "+ getLength()+" side Width "+getWidth()+ "cm is: "+ getArea()+"cm");
 					System.out.println("The Perimeter of a Rectangle with the Side Length of "+ getLength()+" side Width "+getWidth()+ "cm is: "+ getPerimeter()+"cm");
+					System.out.println("_____________________________________________________________________________________________________________________________");
 
 	}
 	
@@ -164,6 +171,8 @@ class Hexagon extends Polygon{
 	public void display(){
 		System.out.println("The Area of the Hexagon with the Side of "+ getSide()+ "cm is: "+ getArea()+"cm");
 		System.out.println("The Perimeter of a Hexagon with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
+		System.out.println("_____________________________________________________________________________________________________________________________");
+
 	}
 }
 class Heptagon extends Polygon{
@@ -191,6 +200,8 @@ class Heptagon extends Polygon{
 	public void display(){
 		System.out.println("The Area of the Heptagon with the Side of "+ getSide()+ "cm is: "+ getArea()+"cm");
 		System.out.println("The Perimeter of the Heptagon with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
+		System.out.println("_____________________________________________________________________________________________________________________________");
+
 	}
 }
 class Octagon extends Polygon{
@@ -218,5 +229,7 @@ class Octagon extends Polygon{
 	public void display(){
 		System.out.println("The Area of the Octagon with the Side of "+ getSide()+ "cm is: "+ getArea()+"cm");
 		System.out.println("The Perimeter of the Octagon with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
+		System.out.println("_____________________________________________________________________________________________________________________________");
+
 	}
 }

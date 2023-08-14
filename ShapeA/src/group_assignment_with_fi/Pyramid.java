@@ -68,15 +68,14 @@ class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 		return vol;
 	}
 	public void display() {
-		System.out.println("The volume of The Triangular Pyramid is: "
-				+ getVol());
-		System.out.println("The Surface Area of The Triangular Pyramid is: "
-				+ getSurf());
-		System.out.println("The Base Area of The Triangular Pyramid is: "
-				+ getBaseArea());
-		System.out.println("The Lateral Area of The Triangular Pyramid is: "
-				+ getLateral_area());
 		
+		System.out.println("The Surface Area of The Triangular Pyramid with a Triangle Base "+getTribase()+"cm, a Pyramid of "+getTriheight()+"cm and a Triangle Base of "+getTribase()+ "cm is: "
+				+ getSurf());
+		System.out.println("The volume of The Triangular Pyramid with a Triangle Base "+getTribase()+"cm, a Pyramid of "+getTriheight()+"cm and a Triangle Base of "+getTribase()+ "cm is: "
+				+ getVol());
+				
+					System.out.println("_____________________________________________________________________________________________________________________________");
+
 
 	}
 }
@@ -120,18 +119,20 @@ class SquarePyramid extends Pyramid implements TwoDimentionalShapes{
 	public void setPyramheight(double pyramheight) {
 	this.pyramheight=pyramheight;	
 	}
+	double getSq_side() {
+		return sq_side;
+	}
+	double getPyramheight(){
+		return pyramheight;
+	}
 
 	public void display() {
-		System.out.println("The volume of The Square Pyramid is: "
-				+ getVol());
-		System.out.println("The Surface Area of The Square Pyramid is: "
+		System.out.println("The Surface Area of The Square Pyramid with a Side of "+getSq_side()+"cm and a Pyramid Height of "+getPyramheight()+"cm is: "
 				+ getSurf());
-		System.out.println("The Base Area of The Square Pyramid is: "
-				+ getBaseArea());
-		System.out.println("The Lateral Area of The Square Pyramid is: "
-				+ getLateral_area());
-		
-		
+		System.out.println("The Volume of The Square Pyramid with a Side of "+getSq_side()+"cm and a Pyramid Height of "+getPyramheight()+"cm is: "
+				+ getVol());
+			System.out.println("_____________________________________________________________________________________________________________________________");
+
 	}
 }
 

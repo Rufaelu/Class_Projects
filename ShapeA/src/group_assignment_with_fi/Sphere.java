@@ -28,16 +28,13 @@ public class Sphere implements ThreeDimentionalShape {
 		return vol;
 	}
 	public void display() {	
-		System.out.println("The Radius of the Sphere is: "
-				+ getRad());
-		System.out.println("The volume of of the Sphere is: "
-				+ getVol());
-		System.out.println("The Surface Area of the Sphere is: "
+	
+		System.out.println("The Surface Area of the Sphere with a Radius of "+getRad()+"cm is: "
 				+ getSurf());
-		System.out.println("The Radius of the Sphere is: "
-				+ getRad());
-		
-		
+				System.out.println("The Volume  of the Cylinder with a Radius of "+getRad()+"cm is: "
+				+ getVol());
+			System.out.println("_____________________________________________________________________________________________________________________________");
+
 		
 	}
 }
@@ -78,13 +75,12 @@ class Cylinder implements ThreeDimentionalShape {
 	}
 	
 	public void display() {	
-		System.out.println("The Radius of the Sphere is: "
-				+ getRad());
-		System.out.println("The volume of of the Sphere is: "
-				+ getVol());
-		System.out.println("The Surface Area of the Sphere is: "
+		System.out.println("The Surface Area of the Cylinder with a Radius of "+getRad()+"cm and a Height of "+getHeight()+ "cm is: "
 				+ getSurf());
-	
+				System.out.println("The Volume  of the Cylinder with a Radius of "+getRad()+"cm and a Height of "+getHeight()+ "cm is: "
+				+ getVol());
+			System.out.println("_____________________________________________________________________________________________________________________________");
+
 		
 		
 	}
@@ -127,7 +123,7 @@ class Cone implements ThreeDimentionalShape {
 		
 		System.out.println("The Surface Area of the Cone with the Radius of "+ getRad()+" cm and the Height of "+ getHeight()+"cm is: "+getSurf());
 		System.out.println("The Volume of the Cone with the Radius of "+ getRad()+" cm and the Height of "+ getHeight()+"cm is: "+getSurf());
-
+		System.out.println("_____________________________________________________________________________________________________________________________");
 	}
 }
 class Cube implements ThreeDimentionalShape {
@@ -155,13 +151,13 @@ class Cube implements ThreeDimentionalShape {
 		return vol;
 	}
 	public void display() {
-		System.out.println("The Side of the Cube is: "
-				+ getSide());
-		System.out.println("The volume of of the Cube is: "
-				+ getVol());
-		System.out.println("The Surface Area of the Cube is: "
+		
+		System.out.println("The Surface Area of the Cube with a side of "+getSide()+"cm is: "
 				+ getSurf());
-	
+				System.out.println("The Volume  of the Cube with a side of "+getSide()+"cm is: "
+				+ getVol());
+			System.out.println("_____________________________________________________________________________________________________________________________");
+
 		
 		
 		

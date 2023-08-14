@@ -5,8 +5,8 @@ public abstract class Pyramid implements ThreeDimentionalShape{
 	public abstract void surfaceArea();
 	public abstract void volume();
 	public abstract void display();
-	public abstract void setTribase(double tribase); 
-	public abstract void setTriheight(double triheight);
+	//public abstract void setTribase(double tribase); 
+	//public abstract void setTriheight(double triheight);
 	public abstract void setPyramheight(double pyramheight);
 		
 	
@@ -14,6 +14,10 @@ public abstract class Pyramid implements ThreeDimentionalShape{
 
 class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 	private double tribase, triheight;
+	TriangularPyramid(double base,double height){
+		tribase=base;
+        triheight=height;
+	}
 	public void surfaceArea() {
 		area();
 		area(pyramheight);// trying to overload
@@ -78,6 +82,9 @@ class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 }
 
 class SquarePyramid extends Pyramid implements TwoDimentionalShapes{
+	SquarePyramid(double side){
+		sq_side=side;
+	}
 
 	public void surfaceArea() {
 		area();
@@ -109,7 +116,11 @@ class SquarePyramid extends Pyramid implements TwoDimentionalShapes{
 	}
 	public double getVol() {
 		return vol;
+	}	
+	public void setPyramheight(double pyramheight) {
+	this.pyramheight=pyramheight;	
 	}
+
 	public void display() {
 		System.out.println("The volume of The Square Pyramid is: "
 				+ getVol());
@@ -123,3 +134,4 @@ class SquarePyramid extends Pyramid implements TwoDimentionalShapes{
 		
 	}
 }
+

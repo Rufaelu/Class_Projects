@@ -95,6 +95,8 @@ class Triangle implements TwoDimentionalShapes{
 	}	
 	public void display(){
 		
+			System.out.println("The Area of a Triangle with the Sides of "+ getSide1()+" and "+getSide2()+ "cm and with the Base of "+getBase()+"cm is: "+ getArea()+"cm");
+			System.out.println("The Perimeter of a Triangle with the Sides of "+ getSide1()+" and "+getSide2()+ "cm and with the Base of "+getBase()+"cm is: "+ getPerimeter());
 	}
 }
 class Rectangle implements TwoDimentionalShapes{
@@ -124,7 +126,9 @@ class Rectangle implements TwoDimentionalShapes{
 		return perimeter;
 	}
 	public void display(){
-		
+					System.out.println("The Area of a Rectangle with the Side Length of "+ getLength()+" side Width "+getWidth()+ "cm is: "+ getArea()+"cm");
+					System.out.println("The Perimeter of a Rectangle with the Side Length of "+ getLength()+" side Width "+getWidth()+ "cm is: "+ getPerimeter()+"cm");
+
 	}
 	
 }
@@ -148,7 +152,9 @@ class Hexagon extends Polygon{
 	public void perimeter() {
 		perimeter=6*side;
 	}
-	
+	public double getSide() {
+		return side;
+	}
 	public double getArea() {
 		return area;
 	}
@@ -156,13 +162,17 @@ class Hexagon extends Polygon{
 		return perimeter;
 	}
 	public void display(){
-		
+		System.out.println("The Area of the Hexagon with the Side of "+ getSide()+ "cm is: "+ getArea()+"cm");
+		System.out.println("The Perimeter of a Rectangle with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
 	}
 }
 class Heptagon extends Polygon{
 	
 	public void setSide(double side) {
 		this.side=side;
+	}
+	public double getSide() {
+	return side;
 	}
 	public void area() {
 		area=cotpi*(side*side)*(7/4);
@@ -179,7 +189,8 @@ class Heptagon extends Polygon{
 		return perimeter;
 	}
 	public void display(){
-		
+		System.out.println("The Area of the Heptagon with the Side of "+ getSide()+ "cm is: "+ getArea()+"cm");
+		System.out.println("The Perimeter of the Heptagon with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
 	}
 }
 class Octagon extends Polygon{
@@ -195,7 +206,7 @@ class Octagon extends Polygon{
 		perimeter=8*side;
 	}
 
-	public double getSides() {
+	public double getSide() {
 		return side;
 	}
 	public double getArea() {
@@ -205,6 +216,7 @@ class Octagon extends Polygon{
 		return perimeter;
 	}
 	public void display(){
-		
+		System.out.println("The Area of the Octagon with the Side of "+ getSide()+ "cm is: "+ getArea()+"cm");
+		System.out.println("The Perimeter of the Octagon with the Side of "+ getSide()+ "cm is: "+ getPerimeter()+"cm");
 	}
 }

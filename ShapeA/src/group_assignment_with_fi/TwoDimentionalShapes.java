@@ -6,6 +6,4 @@ public interface TwoDimentionalShapes {
 	void area();
 	void perimeter();
 	void display();
-	 
-
 }

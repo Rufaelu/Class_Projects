@@ -5,13 +5,8 @@ public abstract class Pyramid implements ThreeDimentionalShape{
 	public abstract void surfaceArea();
 	public abstract void volume();
 	public abstract void display();
-	//public abstract void setTribase(double tribase); 
-	//public abstract void setTriheight(double triheight);
 	public abstract void setPyramheight(double pyramheight);
-		
-	
 }
-
 class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 	private double tribase, triheight;
 	TriangularPyramid(double base,double height){
@@ -22,7 +17,6 @@ class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 		area();
 		area(pyramheight);// trying to overload
 		perimeter();
-		
 		surf=baseArea+lateral_area;
 	}
 	public void volume() {
@@ -68,28 +62,21 @@ class TriangularPyramid extends Pyramid implements TwoDimentionalShapes{
 		return vol;
 	}
 	public void display() {
-		
 		System.out.println("The Surface Area of The Triangular Pyramid with a Triangle Base "+getTribase()+"cm, a Pyramid of "+getTriheight()+"cm and a Triangle Base of "+getTribase()+ "cm is: "
 				+ getSurf());
 		System.out.println("The volume of The Triangular Pyramid with a Triangle Base "+getTribase()+"cm, a Pyramid of "+getTriheight()+"cm and a Triangle Base of "+getTribase()+ "cm is: "
 				+ getVol());
-				
-					System.out.println("_____________________________________________________________________________________________________________________________");
-
-
+		System.out.println("_____________________________________________________________________________________________________________________________");
 	}
 }
-
 class SquarePyramid extends Pyramid implements TwoDimentionalShapes{
 	SquarePyramid(double side){
 		sq_side=side;
 	}
-
 	public void surfaceArea() {
 		area();
 		area(pyramheight);// trying to overload
-		perimeter();
-		
+		perimeter();	
 		surf=baseArea+lateral_area;
 	}
 	public void volume() {

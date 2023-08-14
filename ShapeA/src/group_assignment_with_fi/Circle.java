@@ -1,5 +1,5 @@
 package group_assignment_with_fi;
-//import java.lang.*;
+
 public class Circle implements TwoDimentionalShapes {
 	   private double rad;
 	    private double area;
@@ -145,7 +145,6 @@ abstract class Polygon implements TwoDimentionalShapes{
 	public abstract void area() ;
 	public abstract void perimeter();
 	public abstract void setSide(double x);
-	//public abstract void setSide();
 }
 
 class Hexagon extends Polygon{
